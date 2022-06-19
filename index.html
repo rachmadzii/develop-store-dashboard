@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Store Dashboard</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav id="navSidebar" class="sidebar offcanvas-md offcanvas-start" data-bs-scroll="true" tabindex="-1">
+      <div class="d-flex justify-content-end mt-3 me-4 d-block d-md-none">
+        <button id="closeSidebar" data-bs-dismiss="offcanvas" aria-label="Close" 
+          data-bs-target="#navSidebar" class="btn border-0 p-0 fs-4">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div class="d-flex flex-column gap-1 align-items-center object-fit-contain mt-3 mt-md-5 mb-5">
+        <img src="./assets/images/avatar.png" alt="Profile picture" class="rounded-circle" width="90" height="90" />
+        <p class="fw-bold fs-5 mt-3 color-primary">Shayna Anne</p>
+        <p class="color-secondary">shayna@anne.com</p>
+      </div>
+      <div class="menus d-flex flex-column gap-4">
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-overview"></i>
+            Overview
+          </a>
+          <a href="#" class="item-menu active">
+            <i class="icon-menu ic-trans"></i>
+            Transactions
+          </a>
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-messages"></i>
+            Messages
+          </a>
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-card"></i>
+            Card
+          </a>
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-rewards"></i>
+            Rewards
+          </a>
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-settings"></i>
+            Settings
+          </a>
+          <a href="#" class="item-menu">
+            <i class="icon-menu ic-logout"></i>
+            Log Out
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="mainContent" class="content d-flex flex-column position-relative">
+      <div>
+        <button id="sidebarCollapseDefault" class="btn border-0 p-0 d-none d-md-block">
+          <i class="fas fa-align-left"></i>
+        </button>
+        <button id="sidebarCollapseMobile" data-bs-toggle="offcanvas" data-bs-target="#navSidebar" 
+          aria-controls="navSidebar" class="btn border-0 p-0 d-block d-md-none">
+          <i class="fas fa-align-left"></i>
+        </button>
+      </div>
+      <h4 class="fw-bold color-primary">My Transactions</h4>
+      <div>
+        <p class="mb-2 color-secondary">You’ve spent</p>
+        <h2 class="color-primary">Rp 4.518.000.500</h2>
+      </div>
+      <div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#" class="btn-pill active rounded-pill">All Trx</a>
+          <a href="#" class="btn-pill rounded-pill">Success</a>
+          <a href="#" class="btn-pill rounded-pill">Pending</a>
+          <a href="#" class="btn-pill rounded-pill">Failed</a>
+        </div>
+        <div class="table-card mt-4">
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <thead class="color-primary">
+                <tr>
+                  <td>Game</td>
+                  <td class="text-center">Item</td>
+                  <td class="text-center">Price</td>
+                  <td class="text-center">Status</td>
+                  <td class="text-center">Action</td>
+                </tr>
+              </thead>
+              <tbody id="data-game" class="color-primary">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/32f82e1dca.js" crossorigin="anonymous"></script>
+
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+      crossorigin="anonymous">
+    </script>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
