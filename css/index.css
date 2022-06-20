@@ -18,10 +18,6 @@
   margin-bottom: 0 !important;
 }
 
-body {
-  background-color: var(--white);
-}
-
 .color-primary {
   color: var(--dark-blue);
 }
@@ -39,7 +35,6 @@ body {
 }
 
 .sidebar {
-  min-height: 100vh;
   position: fixed;
   min-width: 260px;
   transition: transform 0.3s ease;
@@ -144,8 +139,9 @@ body {
 .content {
   gap: 30px;
   padding: 50px;
+  min-height: 100vh;
   margin-left: 260px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   background-color: var(--background);
 }
 
