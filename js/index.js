@@ -53,7 +53,7 @@ const dataTable = document.getElementById('data-game');
 
 const dataGame = games.map(
   (game) => `
-    <tr class="align-middle text-center fw-500">
+    <tr class="align-middle text-center fw-500 text-nowrap">
         <td>
             <div class="d-flex gap-3 align-items-center">
                 <img src="${
