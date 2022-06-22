@@ -88,6 +88,6 @@ document
   .addEventListener('click', sidebarCollapse);
 
 function sidebarCollapse() {
-  document.getElementById('navSidebar').classList.toggle('active');
-  document.getElementById('mainContent').classList.toggle('active');
+  document.getElementById('nav-sidebar').classList.toggle('active');
+  document.getElementById('main-content').classList.toggle('active');
 }

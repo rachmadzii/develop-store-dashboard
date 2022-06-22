@@ -16,10 +16,15 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://kit.fontawesome.com/32f82e1dca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav
-      id="navSidebar"
+      id="nav-sidebar"
       tabindex="-1"
       data-bs-scroll="true"
       class="sidebar offcanvas-md offcanvas-start"
@@ -28,7 +33,7 @@
         <button
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-          data-bs-target="#navSidebar"
+          data-bs-target="#nav-sidebar"
           class="btn border-0 p-0 fs-4"
         >
           <i class="fas fa-close"></i>
@@ -129,7 +134,7 @@
       </div>
     </nav>
 
-    <main id="mainContent" class="content d-flex flex-column">
+    <main id="main-content" class="content d-flex flex-column">
       <div>
         <button
           id="sidebarCollapseDefault"
@@ -141,8 +146,8 @@
         <button
           id="sidebarCollapseMobile"
           data-bs-toggle="offcanvas"
-          data-bs-target="#navSidebar"
-          aria-controls="navSidebar"
+          data-bs-target="#nav-sidebar"
+          aria-controls="nav-sidebar"
           aria-label="hamburger-button"
           class="btn border-0 p-0 d-block d-md-none"
         >
@@ -180,22 +185,13 @@
       </div>
     </main>
 
-    <script src="./js/index.js"></script>
+    <!-- !  Web browser mengeksekusi kode program secara berurutan dari atas ke bawah. Kode JavaScript di akhir tag <body>. Tujuannya agar memastikan seluruh tag HTML sudah tampil dan siap dimanipulasi dari JavaScript. menghindari terjadinya render blocking JavaScript. Render blocking JavaScript adalah proses tertundanya loading halaman web karena web browser sibuk mengeksekusi kode program JavaScript. -->
 
-    <script
-      src="https://kit.fontawesome.com/32f82e1dca.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/index.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
   </body>
