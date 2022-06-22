@@ -37,7 +37,7 @@
 .sidebar {
   position: fixed;
   min-width: 260px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .sidebar.active {
@@ -56,73 +56,27 @@
   color: var(--dark-grey);
 }
 
-.item-menu:hover,
-.item-menu.active {
+svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+}
+
+svg > path {
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.item-menu:hover p,
+.item-menu.active p {
   color: var(--dark-blue);
   font-weight: 500;
 }
 
-.icon-menu {
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-  display: inline-block;
-}
-
-.ic-overview {
-  background-image: url('../assets/icons/fi_grid.svg');
-}
-
-.item-menu:hover > .ic-overview {
-  background-image: url('../assets/icons/fi_grid_active.svg');
-}
-
-.ic-trans {
-  background-image: url('../assets/icons/fi_shopping-bag.svg');
-}
-
-.item-menu.active > .ic-trans {
-  background-image: url('../assets/icons/fi_shopping-bag_active.svg');
-}
-
-.ic-messages {
-  background-image: url('../assets/icons/fi_message-circle.svg');
-}
-
-.item-menu:hover > .ic-messages {
-  background-image: url('../assets/icons/fi_message-circle_active.svg');
-}
-
-.ic-card {
-  background-image: url('../assets/icons/fi_credit-card.svg');
-}
-
-.item-menu:hover > .ic-card {
-  background-image: url('../assets/icons/fi_credit-card_active.svg');
-}
-
-.ic-rewards {
-  background-image: url('../assets/icons/fi_award.svg');
-}
-
-.item-menu:hover > .ic-rewards {
-  background-image: url('../assets/icons/fi_award_active.svg');
-}
-
-.ic-settings {
-  background-image: url('../assets/icons/fi_settings.svg');
-}
-
-.item-menu:hover > .ic-settings {
-  background-image: url('../assets/icons/fi_settings_active.svg');
-}
-
-.ic-logout {
-  background-image: url('../assets/icons/fi_power.svg');
-}
-
-.item-menu:hover > .ic-logout {
-  background-image: url('../assets/icons/fi_power_active.svg');
+.item-menu:hover svg,
+.item-menu.active svg {
+  color: var(--purple);
 }
 
 .item-menu.active::before {
@@ -141,7 +95,7 @@
   padding: 50px;
   min-height: 100vh;
   margin-left: 260px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   background-color: var(--background);
 }
 
@@ -154,8 +108,8 @@
   font-weight: 400;
   padding: 10px 40px;
   text-align: center;
-  color: var(--dark-blue);
   text-decoration: none;
+  color: var(--dark-blue);
   background-color: var(--light-grey);
 }
 
