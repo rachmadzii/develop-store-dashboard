@@ -41,11 +41,11 @@
 /* ! styling for sidebar and navigation */
 .sidebar {
   position: fixed;
-  min-width: 260px;
+  min-width: 280px;
   transition: transform 0.5s ease;
 }
 
-/* bergeser ke kiri (X) dengan jarak se-ukuran sidebar (260px) */
+/* bergeser ke kiri (X) dengan jarak se-ukuran sidebar (280px) */
 .sidebar.active {
   transform: translateX(-100%);
 }
@@ -106,7 +106,7 @@ absoulte keluar 1 dimensi tapi ruang sebelumnya tidak ada */
   gap: 30px;
   padding: 50px;
   min-height: 100vh;
-  margin-left: 260px;
+  margin-left: 280px;
   transition: all 0.5s ease;
   background-color: var(--background);
 }
