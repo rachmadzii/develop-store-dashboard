@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* * buat variabel warnanya agar bisa reusable dan mudah digunakan */
 :root {
   --dark-blue: #0c145a;
   --light-blue: #00baff;
@@ -14,13 +13,11 @@
   --white: #ffffff;
 }
 
-/* * tanda (*) artinya styling berlaku untuk semua elemen, keseluruhan html */
 * {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0 !important;
 }
 
-/* * agar reuseable di tag html */
 .color-primary {
   color: var(--dark-blue);
 }
@@ -36,16 +33,13 @@
 .fs-12 {
   font-size: 12px;
 }
-/* end reusable class */
 
-/* ! styling for sidebar and navigation */
 .sidebar {
   position: fixed;
   min-width: 280px;
   transition: transform 0.5s ease;
 }
 
-/* bergeser ke kiri (X) dengan jarak se-ukuran sidebar (280px) */
 .sidebar.active {
   transform: translateX(-100%);
 }
@@ -54,8 +48,6 @@
   margin-left: 30px;
 }
 
-/* position relative dan absolute membuat position element keluar 1 dimensi 
-dari flow tapi ruang sebelumnya masih ada */
 .item-menu {
   gap: 16px;
   display: flex;
@@ -87,8 +79,6 @@ svg > path {
   color: var(--purple);
 }
 
-/* absolute berdasarkan parent item-menu  (parent terdekat), 
-absoulte keluar 1 dimensi tapi ruang sebelumnya tidak ada */
 .item-menu.active::after {
   content: '';
   right: 0;
@@ -99,9 +89,7 @@ absoulte keluar 1 dimensi tapi ruang sebelumnya tidak ada */
   border-radius: 4px;
   background-color: var(--light-blue);
 }
-/* end style of sidebar */
 
-/* ! styling for main content (right) */
 .content {
   gap: 30px;
   padding: 50px;
@@ -152,9 +140,7 @@ absoulte keluar 1 dimensi tapi ruang sebelumnya tidak ada */
 .status.failed {
   color: var(--red);
 }
-/* end style of content */
 
-/* ! styling for responsive from 0 to 767.98px width */
 @media screen and (max-width: 767.98px) {
   .content {
     margin-left: 0;
